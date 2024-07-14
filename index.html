@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <title>Encriptador Challenge</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./assets/logo.png" alt="Logo de la web" class="header__logo" />
+      <h1 class="header__title">Encriptador Challenge</h1>
+    </header>
+    <main class="main">
+      <div class="main__input">
+        <textarea
+          name="input"
+          id=""
+          class="main__input__textarea"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="main__input__alert">
+          <img src="" alt="Ícono de alerta" id="alert__icon" />
+          <span id="alert__text">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="main__input__buttons">
+          <button id="button__encrypt">Encriptar</button>
+          <button id="button__decrypt">Desencriptar</button>
+        </div>
+      </div>
+      <div class="main__result">
+        <img src="./assets/persona_buscando.png" alt="Persona mirando a través de una lupa" class="main__result__image" />
+        <span class="main__result__message">Ningún mensaje fue encontrado</span>
+        <span class="main__result__details"
+          >Ingresa el texto que desees encriptar o desencriptar.</span
+        >
+      </div>
+    </main>
+    <footer>
+      <img src="./assets/logo.png" alt="Logo de la web" class="footer__logo" />
+      <span class="footer__text">Desarrollado por Alessandra Godoy 2024</span>
+      <span class="footer__text">Oracle ONE Next Education</span>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
