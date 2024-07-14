@@ -9,6 +9,8 @@ const dencryptButton = document.getElementById("button__dencrypt");
 const outputContainer = document.querySelector(".main__result");
 const outputElement = document.createElement("textarea");
 outputElement.id = "output";
+outputElement.setAttribute("name", "output");
+outputElement.setAttribute("rows", "8");
 
 const copyButton = document.createElement("button");
 copyButton.innerText =  "Copiar";
