@@ -198,6 +198,11 @@ button {
   justify-self: end;
 }
 
+#copy__alert {
+  font-size: var(--font-size-extra-small);
+  color: var(--clr-medium-gray-400);
+}
+
 footer {
   justify-self: end;
   justify-content: space-between;
