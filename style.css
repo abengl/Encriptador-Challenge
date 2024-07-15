@@ -63,7 +63,7 @@ footer {
 }
 
 header {
-  column-gap: var(--space-small);
+  column-gap: var(--space-regular);
   justify-self: start;
 }
 
@@ -131,6 +131,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: var(--size-small);
 }
 
 button {
@@ -139,6 +140,12 @@ button {
   font-size: var(--font-size-regular);
   width: 280px;
   text-align: center;
+  transition: 5ms;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 #button__encrypt {
@@ -225,7 +232,7 @@ footer {
 }
 
 .footer__text {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-extra-small);
 }
 
 .footer__links {
@@ -237,4 +244,94 @@ footer {
 #link__linkedin {
   color: var(--clr-light-white-100);
   width: var(--font-size-large);
+  transition: 3ms;
+}
+
+#link__github:hover,
+#link__linkedin:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1023px) {
+  header,
+  footer {
+    padding: var(--space-regular);
+  }
+
+  main {
+    padding: var(--space-large);
+    grid-template-columns: 1fr;
+  }
+
+  .main__input {
+    width: 90%;
+  }
+
+  .main__result {
+    width: 90%;
+    padding: var(--space-large);
+  }
+
+  .main__result__image {
+    display: none;
+  }
+
+  #button__copy {
+    width: 90%;
+  }
+}
+
+@media (max-width: 430px) {
+  header,
+  footer {
+    padding: var(--space-small);
+  }
+
+  h1 {
+    font-size: var(--font-size-regular);
+  }
+
+  .header__logo {
+    width: var(--size-extra-small);
+  }
+
+  main {
+    padding: var(--space-regular);
+    grid-template-columns: 1fr;
+  }
+
+  .main__input {
+    width: 90%;
+  }
+
+  #input {
+    margin-top: var(--size-extra-small);
+  }
+  
+  .main__input__buttons {
+    flex-direction: column;
+    gap: var(--space-regular);
+  }
+
+  .main__result {
+    width: 90%;
+    padding: var(--space-regular);
+  }
+
+  .main__result__image {
+    display: none;
+  }
+
+  #button__copy {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    row-gap: var(--space-small);
+  }
+
+  .footer__logo__image {
+    width: var(--size-extra-small);
+  }
 }
