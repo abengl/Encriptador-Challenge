@@ -46,6 +46,11 @@ function encrypt(inputText) {
   return [encrypted, inputText];
 }
 
+/**
+ *
+ * @param {string} encryptedText - The string to decrypt
+ * @returns - The array contains the decrypted text and the original text.
+ */
 function decrypt(encryptedText) {
   const decrypted = encryptedText
     .replace(/enter/g, "e")

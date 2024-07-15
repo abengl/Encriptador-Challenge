@@ -233,7 +233,8 @@ footer {
   gap: var(--space-regular);
 }
 
-#link__github, #link__linkedin {
+#link__github,
+#link__linkedin {
   color: var(--clr-light-white-100);
   width: var(--font-size-large);
 }
